@@ -12,6 +12,7 @@ Music player where song is selected using RFID tag
 
 * [CircuitPython for Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/)
 * [DFPlayer Mini library for CircuitPython](https://github.com/bablokb/circuitpython-dfplayer)
+* [MFRC522 library for CircuitPython](https://github.com/domdfcoding/circuitpython-mfrc522)
 
 ## Connections
 
