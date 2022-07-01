@@ -15,4 +15,10 @@ Music player where song is selected using RFID tag
 
 ## Connections
 
-TODO
+| DFPlayer Mini | Raspberry Pi Pico | Comments              |
+| :-----------: | :---------------: | :-------------------: |
+| VCC           | VSYS              |                       |
+| GND           | GND               | both pins of DFPlayer |
+| RX            | GP16              | through 1k resistor   |
+| TX            | GP17              | through 1k resistor   |
+| BUSY          | GP11              |                       |
