@@ -33,3 +33,7 @@ Music player where song is selected using RFID tag
 | MISO     |                   |
 | MOSI     |                   |
 | RST      |                   |
+
+## Links
+
+[RC522 RFID Reader Module with Raspberry Pi Pico](https://microcontrollerslab.com/raspberry-pi-pico-rfid-rc522-micropython/)
