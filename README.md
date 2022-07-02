@@ -28,11 +28,11 @@ Music player where song is selected using RFID tag
 | :------: | :---------------: |
 | 3.3V     | 3V3               |
 | GND      | GND               |
-| SDA / CS |                   |
-| SCK      |                   |
-| MISO     |                   |
-| MOSI     |                   |
-| RST      |                   |
+| SDA / CS | GP13              |
+| SCK      | GP14              |
+| MISO     | GP12              |
+| MOSI     | GP15              |
+| RST      | GP10              |
 
 ## Links
 
