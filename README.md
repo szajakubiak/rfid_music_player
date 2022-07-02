@@ -37,3 +37,7 @@ Music player where song is selected using RFID tag
 ## Links
 
 [RC522 RFID Reader Module with Raspberry Pi Pico](https://microcontrollerslab.com/raspberry-pi-pico-rfid-rc522-micropython/)
+
+## TODO
+
+* Add connection table for sound output from DFPlayer Mini
