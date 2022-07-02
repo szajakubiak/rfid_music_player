@@ -23,3 +23,13 @@ Music player where song is selected using RFID tag
 | RX            | GP16              | through 1k resistor   |
 | TX            | GP17              | through 1k resistor   |
 | BUSY          | GP11              |                       |
+
+| MFRC522  | Raspberry Pi Pico |
+| :------: | :---------------: |
+| 3.3V     | 3V3               |
+| GND      | GND               |
+| SDA / CS |                   |
+| SCK      |                   |
+| MISO     |                   |
+| MOSI     |                   |
+| RST      |                   |
