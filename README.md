@@ -34,6 +34,10 @@ Music player where song is selected using RFID tag
 | MOSI     | GP15              |
 | RST      | GP10              |
 
+## Issues
+
+There is a lot of poor quality or fake MFRC522 modules. Such modules may not work at all or work in unstable manner. To verify if module is good it's adviced to use [CheckFirmware](https://github.com/OSSLibraries/Arduino_MFRC522v2/tree/master/examples/CheckFirmware) sample sketch from [Arduino_MFRC522v2](https://github.com/OSSLibraries/Arduino_MFRC522v2) library. In the time of writing Raspberry Pi Pico is not supported, therefore one of the supported microcontroller boards needs to be used to do the check. It was found that MFRC522 module which passed the test was running more stable than identical one, which failed the test.
+
 ## Links
 
 [RC522 RFID Reader Module with Raspberry Pi Pico](https://microcontrollerslab.com/raspberry-pi-pico-rfid-rc522-micropython/)
