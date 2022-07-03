@@ -1,8 +1,14 @@
 import board, busio
-from DFPlayer import DFPlayer
 from digitalio import DigitalInOut, Direction
+import mfrc522
+from DFPlayer import DFPlayer
 from time import sleep
 from random import randint
+
+
+rfid = mfrc522.MFRC522(board.GP14, board.GP15, board.GP12, board.GP10, board.GP13)
+rfid.set_antenna_gain(0x07 << 4)
+
 
 dfplayer_vol = 15
 cd = 1
@@ -17,10 +23,19 @@ dfplayer = DFPlayer(uart, volume=dfplayer_vol)
 
 
 while True:
-    song = randint(1, songs_count[cd])
-    dfplayer.play(cd, song)
-
-    while not dfplayer_busy.value:
-        pass
+    (stat, tag_type) = rfid.request(rfid.REQIDL)
     
-    sleep(2)
+    if stat == rfid.OK:
+        (stat, raw_uid) = rfid.anticoll()
+        if stat == rfid.OK:
+            uid = "0x%02x%02x%02x%02x" % (raw_uid[0], raw_uid[1], raw_uid[2], raw_uid[3])
+            print("uid: ", uid)
+            print("")
+
+    #song = randint(1, songs_count[cd])
+    #dfplayer.play(cd, song)
+
+    #while not dfplayer_busy.value:
+    #    pass
+    
+    #sleep(2)
