@@ -2,8 +2,6 @@ import board, busio
 from digitalio import DigitalInOut, Direction, Pull
 import mfrc522
 from DFPlayer import DFPlayer
-from time import sleep
-from random import randint
 
 
 btn = DigitalInOut(board.GP3)
