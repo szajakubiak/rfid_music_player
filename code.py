@@ -15,7 +15,6 @@ rfid.set_antenna_gain(0x07 << 4)
 
 dfplayer_vol = 50
 cd = 1
-songs_count = {1 : 8}
 
 uart = busio.UART(board.GP16, board.GP17, baudrate=9600)
 
