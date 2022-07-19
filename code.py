@@ -13,7 +13,7 @@ rfid = mfrc522.MFRC522(board.GP14, board.GP15, board.GP12, board.GP10, board.GP1
 rfid.set_antenna_gain(0x07 << 4)
 
 
-dfplayer_vol = 15
+dfplayer_vol = 50
 cd = 1
 songs_count = {1 : 8}
 
