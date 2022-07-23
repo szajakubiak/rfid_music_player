@@ -7,6 +7,8 @@ Music player where song is selected using RFID tag
 * [Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)
 * [DFPlayer Mini](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)
 * [MFRC522 RFID reader](https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/)
+* [Audio amplifier 2 x 3W PAM8403 with potentiometer](https://electropeak.com/3w-pam8403-fv-stereo-amplifier-module)
+* 1 or 2 speakers with power up to 3 W
 
 ## Dependencies
 
